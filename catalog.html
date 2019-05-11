@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <!-- Логотип не является пунктом меню. Его нужно размечать отдельным элементом. -->
+      <div class="main-header-logo">
+        <a>
+          <img src="img/logo.svg" width="15" height="15" alt="Логотип городка">
+        </a>
+      </div>
+      <!-- Главное меню: четыре ячейки одинаковой ширины. Для первых двух пунктов выравнивание текста по левому краю, для двух последних — по правому -->
+      <nav class="main-navigation">
+        <ul>
+          <li class="navigation-item1"><a href="info.html">Информация</a></li>
+          <li class="navigation-item1"><a href="media.html">Фото и видео</a></li>
+          <li class="navigation-item2"><a href="map.html">Карта штата</a></li>
+          <li class="navigation-item2-current"><a href="catalog.html">Гостиницы</a></li>
+      </nav>
+    </header>
+    <main class="container">
+      <h1 class="visually-hidden">Гостиницы</h1>
+      <section class="filters">
+      <h2 class="visually-hidden">Фильтр</h2>
+      <!-- Здесь будет форма -->
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Список гостиниц</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <h3 class="catalog-item-head">
+              <a href="catalog-item.html">AMARA RESORT & SPA
+              </a>
+            </h3>
+            <p class="catalog-item-image">
+              <a href="catalog-item.html">
+                <img src="img/hotel-1.jpg" width="220" height="165" alt="AMARA RESORT & SPA">
+              </a>
+            </p>
+            <p class="catalog-category">
+              <span>Гостиница</span>
+              <span>от 4000р.</span>
+            </p>
+            <a class="button-info" href="#">Подробнее</a>
+            <a class="button-book" href="#">Забронировать</a>
+            <p class="stars">
+              <img src="img/star4.jpg" width="220" height="165" alt="4 звезды">
+            </p>
+            <p class="rating">Рейтинг:8,5</p>
+          </li>
+          <li class="catalog-item">
+            <h3 class="catalog-item-head">
+              <a href="catalog-item.html">DESERT QUAIL INN
+              </a>
+            </h3>
+            <p class="catalog-item-image">
+              <a href="catalog-item.html">
+                <img src="img/hotel-2.jpg" width="220" height="165" alt="DESERT QUAIL INN">
+              </a>
+            </p>
+            <p class="catalog-category">
+              <span>Мотель</span>
+              <span>от 3000р.</span>
+            </p>
+            <a class="button-info" href="#">Подробнее</a>
+            <a class="button-book" href="#">Забронировать</a>
+            <p class="stars">
+              <img src="img/star3.jpg" width="220" height="165" alt="3 звезды">
+            </p>
+            <p class="rating">Рейтинг:8,9</p>
+          </li>
+          <li class="catalog-item">
+            <h3 class="catalog-item-head">
+              <a href="catalog-item.html">VILLAS AT POCO DIABLO
+              </a>
+            </h3>
+            <p class="catalog-item-image">
+              <a href="catalog-item.html">
+                <img src="img/hotel-3.jpg" width="220" height="165" alt="VILLAS AT POCO DIABLO">
+              </a>
+            </p>          
+            <p class="catalog-category">
+              <span>Апартаменты</span>
+              <span>от 2000р.</span>
+            </p>
+            <a class="button-info" href="#">Подробнее</a>
+            <a class="button-book" href="#">Забронировать</a>
+            <p class="stars">
+              <img src="img/star2.jpg" width="220" height="165" alt="2 звезды">
+            </p>
+            <p class="rating">Рейтинг:9,2</p>
+          </li>
+    </main>
+    <footer class="main-footer">
+      <p class="hashtag">&num;visitcedona</p>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Твиттер</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Ютуб</a></li>
+        </ul>
+      </div>
+      <p class="developer">
+        website by
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/developer-logo.svg" width="5" height="5" alt="Логотип разработчика"</a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -5,8 +5,55 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <header class="main-header">
+      <!-- Логотип не является пунктом меню. Его нужно размечать отдельным элементом. -->
+      <div class="main-header-logo">
+        <a>
+          <img src="img/logo.svg" width="15" height="15" alt="Логотип городка">
+        </a>
+      </div>
+      <!-- Главное меню: четыре ячейки одинаковой ширины. Для первых двух пунктов выравнивание текста по левому краю, для двух последних — по правому -->
+      <nav class="main-navigation">
+        <ul>
+          <li class="navigation-item1"><a href="info.html">Информация</a></li>
+          <li class="navigation-item1"><a href="media.html">Фото и видео</a></li>
+          <li class="navigation-item2"><a href="map.html">Карта штата</a></li>
+          <li class="navigation-item2"><a href="catalog.html">Гостиницы</a></li>
+      </nav>
+    </header>
+    <main class="container">
+      <h1 class="visually-hidden">Седона</h1>
+      <section class="welcome">
+        <img src="img/welcome.svg" width="25" height="35" alt="Добро пожаловать в Седону">
+      </section>
+      <section class="about">
+        <h2 class="visually-hidden">О городе</h2>
+        <h3>Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд коньон!</p>
+      </section>
+      <section class="reasons">
+        <!-- Причины + особенности (features)-->
+      </section>
+      <section class="appointment">
+        <h2>Заинтересовались?</h2>
+        <p class="appointment-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <h3 class="search">Поиск гостиницы в Седоне </h3>
+        <!-- Здесь будет форма -->
+      </section>
+    </main>
+    <footer class="main-footer">
+      <p class="hashtag">&num;visitcedona</p>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Твиттер</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Ютуб</a></li>
+        </ul>
+      </div>
+      <p class="developer">
+        website by
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/developer-logo.svg" width="5" height="5" alt="Логотип разработчика"</a>
+      </p>
+    </footer>
   </body>
 </html>
