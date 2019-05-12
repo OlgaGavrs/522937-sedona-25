@@ -7,11 +7,9 @@
   <body>
     <header class="main-header">
       <!-- Логотип не является пунктом меню. Его нужно размечать отдельным элементом. -->
-      <div class="main-header-logo">
-        <a>
-          <img src="img/logo.svg" width="15" height="15" alt="Логотип городка">
-        </a>
-      </div>
+      <a class="main-header-logo">
+        <img src="img/logo.svg" width="15" height="15" alt="Логотип городка">
+      </a>
       <!-- Главное меню: четыре ячейки одинаковой ширины. Для первых двух пунктов выравнивание текста по левому краю, для двух последних — по правому -->
       <nav class="main-navigation">
         <ul>
@@ -36,19 +34,17 @@
               </a>
             </h3>
             <p class="catalog-item-image">
-              <a href="catalog-item.html">
-                <img src="img/hotel-1.jpg" width="220" height="165" alt="AMARA RESORT & SPA">
-              </a>
+              <img src="img/hotel-1.jpg" width="220" height="165" alt="AMARA RESORT & SPA">
             </p>
-            <p class="catalog-category">
-              <span>Гостиница</span>
-              <span>от 4000р.</span>
-            </p>
-            <a class="button-info" href="#">Подробнее</a>
-            <a class="button-book" href="#">Забронировать</a>
-            <p class="stars">
-              <img src="img/star4.jpg" width="220" height="165" alt="4 звезды">
-            </p>
+            <div class="catalog-info">
+              <p>Гостиница</p>
+              <a class="button-info" href="#">Подробнее</a>
+            </div>
+            <div class="catalog-book">
+              <p>от 4000р.</p>
+              <a class="button-book" href="#">Забронировать</a>
+            </div>
+            <p class="stars">★ ★ ★ ★</p>
             <p class="rating">Рейтинг:8,5</p>
           </li>
           <li class="catalog-item">
@@ -57,19 +53,17 @@
               </a>
             </h3>
             <p class="catalog-item-image">
-              <a href="catalog-item.html">
-                <img src="img/hotel-2.jpg" width="220" height="165" alt="DESERT QUAIL INN">
-              </a>
+              <img src="img/hotel-2.jpg" width="220" height="165" alt="DESERT QUAIL INN">
             </p>
-            <p class="catalog-category">
-              <span>Мотель</span>
-              <span>от 3000р.</span>
-            </p>
-            <a class="button-info" href="#">Подробнее</a>
-            <a class="button-book" href="#">Забронировать</a>
-            <p class="stars">
-              <img src="img/star3.jpg" width="220" height="165" alt="3 звезды">
-            </p>
+            <div class="catalog-info">
+              <p>Мотель</p>
+              <a class="button-info" href="#">Подробнее</a>
+            </div>
+            <div class="catalog-book">
+              <p>от 3000р.</p>
+              <a class="button-book" href="#">Забронировать</a>
+            </div>
+            <p class="stars">★ ★ ★</p>
             <p class="rating">Рейтинг:8,9</p>
           </li>
           <li class="catalog-item">
@@ -78,19 +72,17 @@
               </a>
             </h3>
             <p class="catalog-item-image">
-              <a href="catalog-item.html">
-                <img src="img/hotel-3.jpg" width="220" height="165" alt="VILLAS AT POCO DIABLO">
-              </a>
+              <img src="img/hotel-3.jpg" width="220" height="165" alt="VILLAS AT POCO DIABLO">
             </p>
-            <p class="catalog-category">
-              <span>Апартаменты</span>
-              <span>от 2000р.</span>
-            </p>
-            <a class="button-info" href="#">Подробнее</a>
-            <a class="button-book" href="#">Забронировать</a>
-            <p class="stars">
-              <img src="img/star2.jpg" width="220" height="165" alt="2 звезды">
-            </p>
+            <div class="catalog-info">
+              <p>Апартаменты</p>
+              <a class="button-info" href="#">Подробнее</a>
+            </div>
+            <div class="catalog-book">
+              <p>от 2000р.</p>
+              <a class="button-book" href="#">Забронировать</a>
+            </div>
+            <p class="stars">★ ★</p>
             <p class="rating">Рейтинг:9,2</p>
           </li>
     </main>
