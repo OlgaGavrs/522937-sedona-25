@@ -7,11 +7,9 @@
   <body>
     <header class="main-header">
       <!-- Логотип не является пунктом меню. Его нужно размечать отдельным элементом. -->
-      <div class="main-header-logo">
-        <a>
-          <img src="img/logo.svg" width="15" height="15" alt="Логотип городка">
-        </a>
-      </div>
+      <a class="main-header-logo">
+        <img src="img/logo.svg" width="15" height="15" alt="Логотип городка">
+      </a>
       <!-- Главное меню: четыре ячейки одинаковой ширины. Для первых двух пунктов выравнивание текста по левому краю, для двух последних — по правому -->
       <nav class="main-navigation">
         <ul>
@@ -32,7 +30,53 @@
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд коньон!</p>
       </section>
       <section class="reasons">
-        <!-- Причины + особенности (features)-->
+        <ul>
+          <li class="reason-1">
+            <h3>Настоящий городок</h3>
+            <p>- №1 -</p>
+            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            <img src="img/city.svg" width="25" height="35" alt="Настоящий городок">
+          </li>
+          <!-- особенности-->
+          <li>            
+            <div class="features">
+              <img src="img/hous.png" width="25" height="35" alt="Домик">
+              <h3>Жильё</h3>
+              <p>Рекомендуем пожить в неастоящем мотеле, всё как в кино!</p>
+            </div>
+            <div class="features">
+              <img src="img/food.png" width="25" height="35" alt="Еда">
+              <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+            <div class="features">
+              <img src="img/souvenir.png" width="25" height="35" alt="Сувенир">
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного производства!</p>
+            </div>
+          </li>
+          <li class="reason-2">
+            <h3>Там есть мост дьявола</h3>
+            <p>- №2 -</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <img src="img/bridge.svg" width="25" height="35" alt="Мост дьявола">
+          </li>
+          <li class="other-reasons">
+            <h3>Небольшая площадь</h3>
+            <p>- №3 -</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="other-reasons">
+            <h3>Красивая дорога</h3>
+            <p>- №4 -</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="other-reasons">
+            <h3>Мало туристов</h3>
+            <p>- №5 -</p>
+            <p>Большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </ul>
       </section>
       <section class="appointment">
         <h2>Заинтересовались?</h2>
