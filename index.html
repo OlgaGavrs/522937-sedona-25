@@ -83,8 +83,38 @@
       <section class="appointment">
         <h2>Заинтересовались?</h2>
         <p class="appointment-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <h3 class="search">Поиск гостиницы в Седоне </h3>
-        <!-- Здесь будет форма -->
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="get">
+          <h3 class="search">Поиск гостиницы в Седоне </h3>
+          <p>
+            <label class="appointment-item">
+              Дата заезда:
+              <input type="text" name="date-in" value="24 апреля 2017">
+            </label>
+          </p>
+          <p>
+            <label class="appointment-item">
+              Дата выезда:
+              <input type="text" name="date-out" value="4 июля 2017">
+            </label>
+          </p>
+          <p>
+            <label class="appointment-item">
+              Взрослые:
+              <button type="button">-</button>
+              <input type="text" min="0" max="4" value="2" step="1">
+              <button type="button">+</button>
+            </label>
+          </p>
+          <p>
+            <label class="appointment-item">
+              Дети:
+              <button type="button">-</button>
+              <input type="text" min="0" max="4" value="0" step="1">
+              <button type="button">+</button>
+            </label>
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
       </section>
     </main>
     <footer class="main-footer">
