@@ -83,7 +83,7 @@
       <section class="appointment">
         <h2>Заинтересовались?</h2>
         <p class="appointment-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="get">
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
           <h3 class="search">Поиск гостиницы в Седоне </h3>
           <p>
             <label class="appointment-item">
@@ -100,17 +100,17 @@
           <p>
             <label class="appointment-item">
               Взрослые:
-              <button type="button">-</button>
+              <button type="button" aria-label="Уменьшить">-</button>
               <input type="text" min="0" max="4" value="2" step="1">
-              <button type="button">+</button>
+              <button type="button" aria-label="Увеличить">+</button>
             </label>
           </p>
           <p>
             <label class="appointment-item">
               Дети:
-              <button type="button">-</button>
+              <button type="button" aria-label="Уменьшить">-</button>
               <input type="text" min="0" max="4" value="0" step="1">
-              <button type="button">+</button>
+              <button type="button" aria-label="Увеличить">+</button>
             </label>
           </p>
           <button class="button" type="submit">Отправить</button>
@@ -122,17 +122,17 @@
       <div class="footer-social">
         <ul>
           <li>
-            <a class="social-button" href="#">
+            <a class="social-button" href="#" aria-label="Страница в Твиттере">
               <img src="img/twitter.svg" width="17" height="15" alt="Твиттер">
             </a>
           </li>
           <li>
-            <a class="social-button" href="#">
+            <a class="social-button" href="#" aria-label="Страница на Фейсбуке">
               <img src="img/fb.svg" width="12" height="22" alt="Фейсбук">
             </a>
           </li>
           <li>
-            <a class="social-button" href="#">
+            <a class="social-button" href="#" aria-label="Ютуб канал">
               <img src="img/youtube.svg" width="20" height="16" alt="Ютуб">
             </a>
           </li>
@@ -140,7 +140,9 @@
       </div>
       <p class="developer">
         website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип разработчика"</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Профессиональный онлайн‑курс от HTML Academy">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип разработчика">
+        </a>
       </p>
     </footer>
   </body>

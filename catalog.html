@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <!-- Логотип не является пунктом меню. Его нужно размечать отдельным элементом. -->
-      <a class="main-header-logo">
+      <a class="main-header-logo" href="index.html" aria-label="На главную">
         <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип городка">
       </a>
       <!-- Главное меню: четыре ячейки одинаковой ширины. Для первых двух пунктов выравнивание текста по левому краю, для двух последних — по правому -->
@@ -23,7 +23,65 @@
       <h1 class="visually-hidden">Гостиницы</h1>
       <section class="filters">
       <h2 class="visually-hidden">Фильтр</h2>
-      <!-- Здесь будет форма -->
+      <form class="filter" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend class="filter-title">Инфоструктура:</legend>
+          <ul>
+            <li class="filter-option">
+              <label>
+                <input class="visually-hidden filter-checkbox" type="checkbox" name="pool" checked>
+                Бассейн
+              </label>
+            </li>
+            <li class="filter-option">
+              <label>
+                <input class="visually-hidden filter-checkbox" type="checkbox" name="parking">
+                Парковка
+              </label>
+            </li>
+            <li class="filter-option">
+              <label>
+                <input class="visually-hidden filter-checkbox" type="checkbox" name="wifi">
+                Wi-Fi
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend class="filter-title">Тип жилья:</legend>
+          <ul>
+            <li class="filter-option">
+              <label>
+                <input class="visually-hidden filter-checkbox" type="checkbox" name="hotel" checked>
+                Гостиница
+              </label>
+            </li>
+            <li class="filter-option">
+              <label>
+                <input class="visually-hidden filter-checkbox" type="checkbox" name="motel" checked>
+                Мотель
+              </label>
+            </li>
+            <li class="filter-option">
+              <label>
+                <input class="visually-hidden filter-checkbox" type="checkbox" name="apartment" checked>
+                Апартаменты
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset >
+          <legend class="filter-title">Стоимость в сутки (р):</legend>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+          </div>
+        </fieldset>
+  <!-- шкала с двумя ползунками -->
+        <button type="submit" class="filter-button button">
+            Показать
+        </button>
+      </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список гостиниц</h2>
@@ -91,17 +149,17 @@
       <div class="footer-social">
         <ul>
           <li>
-            <a class="social-button" href="#">
+            <a class="social-button" href="#" aria-label="Страница в Твиттере">
               <img src="img/twitter.svg" width="17" height="15" alt="Твиттер">
             </a>
           </li>
           <li>
-            <a class="social-button" href="#">
+            <a class="social-button" href="#" aria-label="Страница на Фейсбуке">
               <img src="img/fb.svg" width="12" height="22" alt="Фейсбук">
             </a>
           </li>
           <li>
-            <a class="social-button" href="#">
+            <a class="social-button" href="#" aria-label="Ютуб канал">
               <img src="img/youtube.svg" width="20" height="16" alt="Ютуб">
             </a>
           </li>
@@ -109,7 +167,9 @@
       </div>
       <p class="developer">
         website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип разработчика"</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Профессиональный онлайн‑курс от HTML Academy">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип разработчика">
+        </a>
       </p>
     </footer>
   </body>
