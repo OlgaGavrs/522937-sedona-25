@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -12,10 +15,10 @@
       <!-- Главное меню: четыре ячейки одинаковой ширины. Для первых двух пунктов выравнивание текста по левому краю, для двух последних — по правому -->
       <nav class="main-navigation">
         <ul>
-          <li class="navigation-item1"><a href="info.html">Информация</a></li>
-          <li class="navigation-item1"><a href="media.html">Фото и видео</a></li>
-          <li class="navigation-item2"><a href="map.html">Карта штата</a></li>
-          <li class="navigation-item2"><a href="catalog.html">Гостиницы</a></li>
+          <li class="navigation-item"><a href="info.html">Информация</a></li>
+          <li class="navigation-item"><a href="media.html">Фото и видео</a></li>
+          <li class="navigation-item"><a href="map.html">Карта штата</a></li>
+          <li class="navigation-item"><a href="catalog.html">Гостиницы</a></li>
       </nav>
     </header>
     <main class="container">
@@ -25,96 +28,72 @@
       </section>
       <section class="about">
         <h2 class="visually-hidden">О городе</h2>
-        <h3>Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
+        <h3>Седона — небольшой городок в Аризоне, <br>заслуживающий большего!</h3>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд коньон!</p>
       </section>
-      <section class="reasons">
-        <ul>
-          <li class="reason-1">
-            <h3>Настоящий городок</h3>
-            <p>- №1 -</p>
-            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-            <!-- картинки лучше убрать в стили, сделать фоном -->
-            <img src="img/city.jpg" width="800" height="256" alt="Настоящий городок">
-          </li>
-          <!-- особенности
-                картинки лучше убрать в стили, сделать фоном-->
-          <li>
-            <div class="features">
-              <img src="img/features-house.svg" width="75" height="72" alt="Домик">
-              <h3>Жильё</h3>
-              <p>Рекомендуем пожить в неастоящем мотеле, всё как в кино!</p>
-            </div>
-            <div class="features">
-              <img src="img/features-food.svg" width="74" height="70" alt="Еда">
-              <h3>Еда</h3>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </div>
-            <div class="features">
-              <img src="img/features-present.svg" width="64" height="76" alt="Сувенир">
-              <h3>Сувениры</h3>
-              <p>Не только китайского, но и местного производства!</p>
+      <section>
+        <ul class="reasons">
+          <li class="reasons-item">
+            <div class="city">
+              <h3>Настоящий <br />городок</h3>
+              <p>- №1 -</p>
+              <p>Седона - не аттракцион для туристов, <br>там течёт своя жизнь</p>
             </div>
           </li>
-          <li class="reason-2">
-            <h3>Там есть мост дьявола</h3>
-            <p>- №2 -</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            <!-- картинки лучше убрать в стили, сделать фоном -->
-            <img src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
+          <li class="reasons-item">
+            <div class="bridge">
+              <h3>Там есть <br>мост дьявола</h3>
+              <p>- №2 -</p>
+              <p>Да, по нему можно пройти! Если конечно <br>вы осмелитесь</p>
+            </div>
           </li>
-          <li class="other-reasons">
+          <li class="others">
             <h3>Небольшая площадь</h3>
             <p>- №3 -</p>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="other-reasons">
+          <li class="others">
             <h3>Красивая дорога</h3>
             <p>- №4 -</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="other-reasons">
+          <li class="others">
             <h3>Мало туристов</h3>
             <p>- №5 -</p>
             <p>Большинство едет в гранд каньон и толпится там</p>
+          </li>
+          <li>
+            <!-- особенности-->
+            <ul class="features">
+              <li class="features-item">
+                <img src="img/features-house.svg" width="75" height="72" alt="Домик">
+                <h3>Жильё</h3>
+                <p>Рекомендуем пожить в неастоящем мотеле, всё как в кино!</p>
+              </li>
+              <li class="features-item">
+                <img src="img/features-food.svg" width="74" height="70" alt="Еда">
+                <h3>Еда</h3>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="features-item">
+                <img src="img/features-present.svg" width="64" height="76" alt="Сувенир">
+                <h3>Сувениры</h3>
+                <p>Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
       <section class="appointment">
         <h2>Заинтересовались?</h2>
-        <p class="appointment-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-          <h3 class="search">Поиск гостиницы в Седоне </h3>
-          <p>
-            <label class="appointment-item">
-              Дата заезда:
-              <input type="text" name="date-in" value="24 апреля 2017">
-            </label>
-          </p>
-          <p>
-            <label class="appointment-item">
-              Дата выезда:
-              <input type="text" name="date-out" value="4 июля 2017">
-            </label>
-          </p>
-          <p>
-            <label class="appointment-item">
-              Взрослые:
-              <button type="button" aria-label="Уменьшить">-</button>
-              <input type="text" min="0" max="4" value="2" step="1">
-              <button type="button" aria-label="Увеличить">+</button>
-            </label>
-          </p>
-          <p>
-            <label class="appointment-item">
-              Дети:
-              <button type="button" aria-label="Уменьшить">-</button>
-              <input type="text" min="0" max="4" value="0" step="1">
-              <button type="button" aria-label="Увеличить">+</button>
-            </label>
-          </p>
-          <button class="button" type="submit">Отправить</button>
-        </form>
+        <p>Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <!--ссылка!!!  -->
+        <!-- Кнопка «Поиск гостиницы в Седоне» управляет отображением формы поиска гостиницы. Вёрстка модального окна обязательна (смотрите папку слоёв «search form»). -->
+        <a class="button search" href="#">Поиск гостиницы в Седоне</a>
+      </section>
+      <!-- ???карта -->
+      <section class="map">
+        <img src="img/map.png">
       </section>
     </main>
     <footer class="main-footer">
@@ -122,28 +101,66 @@
       <div class="footer-social">
         <ul>
           <li>
-            <a class="social-button" href="#" aria-label="Страница в Твиттере">
-              <img src="img/twitter.svg" width="17" height="15" alt="Твиттер">
+            <a class="social-button" href="#">Твиттер
+              <!-- <img src="img/twitter.svg" width="17" height="15" alt="Твиттер"> -->
             </a>
           </li>
           <li>
-            <a class="social-button" href="#" aria-label="Страница на Фейсбуке">
-              <img src="img/fb.svg" width="12" height="22" alt="Фейсбук">
+            <a class="social-button" href="#">Фейсбук
+              <!-- <img src="img/fb.svg" width="12" height="22" alt="Фейсбук"> -->
             </a>
           </li>
           <li>
-            <a class="social-button" href="#" aria-label="Ютуб канал">
-              <img src="img/youtube.svg" width="20" height="16" alt="Ютуб">
+            <a class="social-button" href="#">Ютуб
+              <!-- <img src="img/youtube.svg" width="20" height="16" alt="Ютуб"> -->
             </a>
           </li>
         </ul>
       </div>
       <p class="developer">
         website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Профессиональный онлайн‑курс от HTML Academy">
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип разработчика">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy
+          <!-- <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип разработчика"> -->
         </a>
       </p>
     </footer>
+
+
+    <section class="modal-search">
+      <h2 class="visually-hidden">Поиск гостиницы в Седоне </h2>
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label>
+            Дата заезда:
+            <input type="text" name="date-in" value="24 апреля 2017">
+            <a href="#" class="button calendar">Календарь</a>
+          </label>
+        </p>
+        <p>
+          <label>
+            Дата выезда:
+            <input type="text" name="date-out" value="4 июля 2017">
+            <a href="#" class="button calendar">Календарь</a>
+          </label>
+        </p>
+        <p>
+          <label>
+            Взрослые:
+            <button class="button button-input" type="button" aria-label="Уменьшить">-</button>
+            <input type="text" min="0" max="4" value="2" step="1">
+            <button class="button button-input" type="button" aria-label="Увеличить">+</button>
+          </label>
+        </p>
+        <p>
+          <label class="search-item">
+            Дети:
+            <button class="button button-input" type="button" aria-label="Уменьшить">-</button>
+            <input type="text" min="0" max="4" value="0" step="1">
+            <button class="button button-input" type="button" aria-label="Увеличить">+</button>
+          </label>
+        </p>
+        <button class="button button-submit" type="submit">Найти</button>
+      </form>
+    </section>
   </body>
 </html>

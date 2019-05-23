@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <!-- Логотип не является пунктом меню. Его нужно размечать отдельным элементом. -->
       <a class="main-header-logo" href="index.html" aria-label="На главную">
@@ -13,10 +16,10 @@
       <!-- Главное меню: четыре ячейки одинаковой ширины. Для первых двух пунктов выравнивание текста по левому краю, для двух последних — по правому -->
       <nav class="main-navigation">
         <ul>
-          <li class="navigation-item1"><a href="info.html">Информация</a></li>
-          <li class="navigation-item1"><a href="media.html">Фото и видео</a></li>
-          <li class="navigation-item2"><a href="map.html">Карта штата</a></li>
-          <li class="navigation-item2-current"><a href="catalog.html">Гостиницы</a></li>
+          <li class="navigation-item"><a href="info.html">Информация</a></li>
+          <li class="navigation-item"><a href="media.html">Фото и видео</a></li>
+          <li class="navigation-item"><a href="map.html">Карта штата</a></li>
+          <li class="navigation-item-current"><a href="catalog.html">Гостиницы</a></li>
       </nav>
     </header>
     <main class="container">
@@ -96,11 +99,11 @@
             </p>
             <div class="catalog-info">
               <p>Гостиница</p>
-              <a class="button-info" href="#">Подробнее</a>
+              <a class="button button-info" href="#">Подробнее</a>
             </div>
             <div class="catalog-book">
               <p>от 4000р.</p>
-              <a class="button-book" href="#">Забронировать</a>
+              <a class="button button-book" href="#">Забронировать</a>
             </div>
             <p class="stars">★ ★ ★ ★</p>
             <p class="rating">Рейтинг:8,5</p>
@@ -115,11 +118,11 @@
             </p>
             <div class="catalog-info">
               <p>Мотель</p>
-              <a class="button-info" href="#">Подробнее</a>
+              <a class="button button-info" href="#">Подробнее</a>
             </div>
             <div class="catalog-book">
               <p>от 3000р.</p>
-              <a class="button-book" href="#">Забронировать</a>
+              <a class="button button-book" href="#">Забронировать</a>
             </div>
             <p class="stars">★ ★ ★</p>
             <p class="rating">Рейтинг:8,9</p>
@@ -134,11 +137,11 @@
             </p>
             <div class="catalog-info">
               <p>Апартаменты</p>
-              <a class="button-info" href="#">Подробнее</a>
+              <a class="button button-info" href="#">Подробнее</a>
             </div>
             <div class="catalog-book">
               <p>от 2000р.</p>
-              <a class="button-book" href="#">Забронировать</a>
+              <a class="button button-book" href="#">Забронировать</a>
             </div>
             <p class="stars">★ ★</p>
             <p class="rating">Рейтинг:9,2</p>
@@ -149,26 +152,26 @@
       <div class="footer-social">
         <ul>
           <li>
-            <a class="social-button" href="#" aria-label="Страница в Твиттере">
-              <img src="img/twitter.svg" width="17" height="15" alt="Твиттер">
+            <a class="social-button" href="#">Твиттер
+              <!-- <img src="img/twitter.svg" width="17" height="15" alt="Твиттер"> -->
             </a>
           </li>
           <li>
-            <a class="social-button" href="#" aria-label="Страница на Фейсбуке">
-              <img src="img/fb.svg" width="12" height="22" alt="Фейсбук">
+            <a class="social-button" href="#">Фейсбук
+              <!-- <img src="img/fb.svg" width="12" height="22" alt="Фейсбук"> -->
             </a>
           </li>
           <li>
-            <a class="social-button" href="#" aria-label="Ютуб канал">
-              <img src="img/youtube.svg" width="20" height="16" alt="Ютуб">
+            <a class="social-button" href="#">Ютуб
+              <!-- <img src="img/youtube.svg" width="20" height="16" alt="Ютуб"> -->
             </a>
           </li>
         </ul>
       </div>
       <p class="developer">
         website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Профессиональный онлайн‑курс от HTML Academy">
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип разработчика">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy
+          <!-- <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип разработчика"> -->
         </a>
       </p>
     </footer>
