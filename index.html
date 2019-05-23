@@ -19,6 +19,7 @@
           <li class="navigation-item"><a href="media.html">Фото и видео</a></li>
           <li class="navigation-item"><a href="map.html">Карта штата</a></li>
           <li class="navigation-item"><a href="catalog.html">Гостиницы</a></li>
+        </ul>
       </nav>
     </header>
     <main class="container">
@@ -93,7 +94,7 @@
       </section>
       <!-- ???карта -->
       <section class="map">
-        <img src="img/map.png">
+        <img src="img/map.png" alt="Седона на карте">
       </section>
     </main>
     <footer class="main-footer">
@@ -144,20 +145,16 @@
           </label>
         </p>
         <p>
-          <label>
-            Взрослые:
-            <button class="button button-input" type="button" aria-label="Уменьшить">-</button>
-            <input type="text" min="0" max="4" value="2" step="1">
-            <button class="button button-input" type="button" aria-label="Увеличить">+</button>
-          </label>
+          <label for="adult">Взрослые:</label>
+          <button class="button button-input" type="button" aria-label="Уменьшить">-</button>
+          <input id="adult" type="text" value="2">
+          <button class="button button-input" type="button" aria-label="Увеличить">+</button>
         </p>
         <p>
-          <label class="search-item">
-            Дети:
+          <label for="child">Дети:</label>
             <button class="button button-input" type="button" aria-label="Уменьшить">-</button>
-            <input type="text" min="0" max="4" value="0" step="1">
-            <button class="button button-input" type="button" aria-label="Увеличить">+</button>
-          </label>
+            <input id="child" type="text" value="0">
+            <button class="button button-input" type="button" aria-label="Увеличить">+</button>          
         </p>
         <button class="button button-submit" type="submit">Найти</button>
       </form>
