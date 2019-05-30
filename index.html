@@ -10,76 +10,93 @@
   <body>
     <header class="main-header">
       <a class="main-header-logo">
-        <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип городка">
+          <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип городка">
       </a>
-      <!-- Главное меню: четыре ячейки одинаковой ширины. Для первых двух пунктов выравнивание текста по левому краю, для двух последних — по правому -->
-      <nav class="main-navigation">
-        <ul>
+      <nav class="main-navigation  container">
+        <ul class="main-navigation-list">
           <li class="navigation-item"><a href="info.html">Информация</a></li>
           <li class="navigation-item"><a href="media.html">Фото и видео</a></li>
-          <li class="navigation-item"><a href="map.html">Карта штата</a></li>
-          <li class="navigation-item"><a href="catalog.html">Гостиницы</a></li>
+          <li class="navigation-item right"><a href="map.html">Карта штата</a></li>
+          <li class="navigation-item right"><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
+
     <main class="container">
       <h1 class="visually-hidden">Седона</h1>
       <section class="welcome">
-        <img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
+        <img src="img/intro-welcome.svg" height="353" alt="Добро пожаловать в Седону">
       </section>
       <section class="about">
         <h2 class="visually-hidden">О городе</h2>
         <h3>Седона — небольшой городок в Аризоне, <br>заслуживающий большего!</h3>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд коньон!</p>
       </section>
-      <section>
-        <ul class="reasons">
+      <section class="reasons">
+        <ul class="reasons-list">
           <li class="reasons-item">
             <div class="city">
-              <h3>Настоящий <br />городок</h3>
+              <h3>Настоящий<br>городок</h3>
               <p>- №1 -</p>
-              <p>Седона - не аттракцион для туристов, <br>там течёт своя жизнь</p>
+              <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <img src="img/city.jpg" alt="Фото городка">
+          </li>
+          <li class="reasons-item">
+            <img src="img/bridge.jpg" alt="Фото моста">
+            <div class="bridge">
+              <h3>Там есть<br>мост дьявола</h3>
+              <p>- №2 -</p>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
           </li>
           <li class="reasons-item">
-            <div class="bridge">
-              <h3>Там есть <br>мост дьявола</h3>
-              <p>- №2 -</p>
-              <p>Да, по нему можно пройти! Если конечно <br>вы осмелитесь</p>
-            </div>
+            <ul class="others">
+              <li>
+                <div class="others-item">
+                  <h3>Небольшая площадь</h3>
+                  <p>- №3 -</p>
+                  <p>Все достопримечательности находятся очень близко</p>
+                </div>
+              </li>
+              <li>
+                <div class="others-item">
+                  <h3>Красивая<br>дорога</h3>
+                  <p>- №4 -</p>
+                  <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                </div>
+              </li>
+              <li>
+                <div class="others-item">
+                  <h3>Мало <br>туристов</h3>
+                  <p>- №5 -</p>
+                  <p>Большинство едет в гранд каньон<br>и толпится там</p>
+                </div>
+              </li>
+            </ul>
           </li>
-          <li class="others">
-            <h3>Небольшая площадь</h3>
-            <p>- №3 -</p>
-            <p>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="others">
-            <h3>Красивая дорога</h3>
-            <p>- №4 -</p>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="others">
-            <h3>Мало туристов</h3>
-            <p>- №5 -</p>
-            <p>Большинство едет в гранд каньон и толпится там</p>
-          </li>
-          <li>
-            <!-- особенности-->
+          <li class="reasons-item">
             <ul class="features">
-              <li class="features-item">
-                <img src="img/features-house.svg" width="75" height="72" alt="Домик">
-                <h3>Жильё</h3>
-                <p>Рекомендуем пожить в неастоящем мотеле, всё как в кино!</p>
+              <li>
+                <div class="features-item">
+                  <img src="img/features-house.svg" width="75" height="72" alt="Домик">
+                  <h3>Жильё</h3>
+                  <p>Рекомендуем пожить в неастоящем мотеле,<br> всё как в кино!</p>
+                </div>
               </li>
-              <li class="features-item">
-                <img src="img/features-food.svg" width="74" height="70" alt="Еда">
-                <h3>Еда</h3>
-                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <li>
+                <div class="features-item">
+                  <img src="img/features-food.svg" width="74" height="70" alt="Еда">
+                  <h3>Еда</h3>
+                  <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+                </div>
               </li>
-              <li class="features-item">
-                <img src="img/features-present.svg" width="64" height="76" alt="Сувенир">
-                <h3>Сувениры</h3>
-                <p>Не только китайского, но и местного производства!</p>
+              <li>
+                <div class="features-item">
+                  <img src="img/features-present.svg" width="64" height="76" alt="Сувенир">
+                  <h3>Сувениры</h3>
+                  <p>Не только китайского, но и местного<br> производства!</p>
+                </div>
               </li>
             </ul>
           </li>
@@ -154,7 +171,7 @@
           <label for="child">Дети:</label>
             <button class="button button-input" type="button" aria-label="Уменьшить">-</button>
             <input id="child" type="text" value="0">
-            <button class="button button-input" type="button" aria-label="Увеличить">+</button>          
+            <button class="button button-input" type="button" aria-label="Увеличить">+</button>
         </p>
         <button class="button button-submit" type="submit">Найти</button>
       </form>
