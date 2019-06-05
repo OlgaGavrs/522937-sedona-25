@@ -10,7 +10,7 @@
   <body class="inner-page">
     <div class="container">
       <header class="main-header">
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="index.html">
             <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип городка">
         </a>
         <nav class="main-navigation">
@@ -22,7 +22,6 @@
           </ul>
         </nav>
       </header>
-
       <main>
       <h1 class="visually-hidden">Гостиницы</h1>
       <section class="filters">
@@ -32,22 +31,16 @@
           <legend class="filter-title">Инфоструктура:</legend>
           <ul>
             <li class="filter-option">
-              <label>
-                <input class="visually-hidden filter-checkbox" type="checkbox" name="pool" checked>
-                Бассейн
-              </label>
+              <input id="filter-pool" class="visually-hidden filter-checkbox" type="checkbox" name="pool" checked>
+              <label for="filter-pool">Бассейн</label>
             </li>
             <li class="filter-option">
-              <label>
-                <input class="visually-hidden filter-checkbox" type="checkbox" name="parking">
-                Парковка
-              </label>
+              <input id="filter-parking" class="visually-hidden filter-checkbox" type="checkbox" name="parking">
+              <label for="filter-parking"> Парковка</label>
             </li>
             <li class="filter-option">
-              <label>
-                <input class="visually-hidden filter-checkbox" type="checkbox" name="wifi">
-                Wi-Fi
-              </label>
+              <input id="filter-wifi" class="visually-hidden filter-checkbox" type="checkbox" name="wifi">
+              <label for="filter-wifi">Wi-Fi</label>
             </li>
           </ul>
         </fieldset>
@@ -55,37 +48,33 @@
           <legend class="filter-title">Тип жилья:</legend>
           <ul>
             <li class="filter-option">
-              <label>
-                <input class="visually-hidden filter-checkbox" type="checkbox" name="hotel" checked>
-                Гостиница
-              </label>
+              <input id="filter-hotel" class="visually-hidden filter-checkbox" type="checkbox" name="hotel" checked>
+              <label for="filter-hotel">Гостиница</label>
             </li>
             <li class="filter-option">
-              <label>
-                <input class="visually-hidden filter-checkbox" type="checkbox" name="motel" checked>
-                Мотель
-              </label>
+              <input id="filter-motel" class="visually-hidden filter-checkbox" type="checkbox" name="motel" checked>
+              <label for="filter-motel">Мотель</label>
             </li>
             <li class="filter-option">
-              <label>
-                <input class="visually-hidden filter-checkbox" type="checkbox" name="apartment" checked>
-                Апартаменты
-              </label>
+              <input id="filter-apartment" class="visually-hidden filter-checkbox" type="checkbox" name="apartment" checked>
+              <label for="filter-apartment">Апартаменты</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset >
-          <legend class="filter-title">Стоимость в сутки (р):</legend>
-          <div class="price-controls">
-            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-          </div>
-        </fieldset>
-  <!-- шкала с двумя ползунками -->
-        <button type="submit" class="filter-button button">
-            Показать
-        </button>
-      </form> 
+        <div class="filter-wrapper">
+          <fieldset >
+            <legend class="filter-title">Стоимость в сутки (р):</legend>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+          </fieldset>
+            <!-- шкала с двумя ползунками -->
+          <button type="submit" class="filter-button button">
+              Показать
+          </button>
+        </div>
+      </form>
       </section>
       <section class="sort">
 
@@ -165,36 +154,34 @@
         </ul>
       </section>
     </main>
-    <!-- <footer class="main-footer">
+    <footer class="main-footer">
       <div class="footer">
         <p class="hashtag">&num;visitcedona</p>
-        <div class="footer-social">
-          <ul>
+          <ul class="footer-social">
             <li>
               <a class="social-button" href="#"><span class="visually-hidden">Твиттер</span>
-                <img src="img/twitter.svg" width="17" height="15">
+                <img src="img/twitter.svg" width="17" height="15" alt="Твиттер">
               </a>
             </li>
             <li>
               <a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span>
-                <img src="img/fb.svg" width="12" height="22">
+                <img src="img/fb.svg" width="12" height="22" alt="Фейсбук">
               </a>
             </li>
             <li>
               <a class="social-button" href="#"><span class="visually-hidden">Ютуб</span>
-                <img src="img/youtube.svg" width="20" height="16">
+                <img src="img/youtube.svg" width="20" height="16" alt="Ютуб">
               </a>
             </li>
           </ul>
-        </div>
         <p class="developer">
           website by
           <a href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span>
-            <img src="img/logo-htmlacademy.svg" width="115" height="41">
+            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
           </a>
         </p>
       </div>
-    </footer> -->
+    </footer>
   </div>
   </body>
 </html>
