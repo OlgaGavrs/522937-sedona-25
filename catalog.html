@@ -18,7 +18,7 @@
             <li class="navigation-item"><a href="info.html">Информация</a></li>
             <li class="navigation-item"><a href="media.html">Фото и видео</a></li>
             <li class="navigation-item right"><a href="map.html">Карта штата</a></li>
-            <li class="navigation-item right"><a href="catalog.html">Гостиницы</a></li>
+            <li class="navigation-item right navigation-item-current"><a href="catalog.html">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -28,7 +28,7 @@
       <h2 class="visually-hidden">Фильтр</h2>
       <form class="filter" action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
-          <legend class="filter-title">Инфоструктура:</legend>
+          <legend class="filter-title">Инфраструктура:</legend>
           <ul>
             <li class="filter-option">
               <input id="filter-pool" class="visually-hidden filter-checkbox" type="checkbox" name="pool" checked>
@@ -61,23 +61,39 @@
             </li>
           </ul>
         </fieldset>
-        <div class="filter-wrapper">
-          <fieldset >
-            <legend class="filter-title">Стоимость в сутки (р):</legend>
-            <div class="price-controls">
-              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+        <div class="filter-range">
+          <div >
+            <div class="filter-range-title">Стоимость в сутки (р):</div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
             </div>
-          </fieldset>
-            <!-- шкала с двумя ползунками -->
-          <button type="submit" class="filter-button button">
-              Показать
-          </button>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button type="submit" class="button btn-transparent">Показать</button>
         </div>
       </form>
       </section>
       <section class="sort">
-
+        <h2>Найдено: 3</h2>
+        <p>Сортировка:</p>
+        <a class="sort-type sort-current" href="#">По цене</a>
+        <a class="sort-type" href="#">По типу</a>
+        <a class="sort-type" href="#">По рейтингу</a>
+        <div class="up-down">
+          <a href="#" class="up-down-item up-down-current"><span class="visually-hidden">Сортировать по возрастанию</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
+          </a>
+          <a href="#" class="up-down-item"><span class="visually-hidden">Сортировать по убыванию</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
+          </a>
+        </div>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список гостиниц</h2>
@@ -96,7 +112,7 @@
                 <a class="button button-info" href="#">Подробнее</a>
               </div>
               <div class="catalog-item-book">
-                <p>от 4000р.</p>
+                <p>от 4000 р.</p>
                 <a class="button button-book" href="#">Забронировать</a>
               </div>
             </div>
@@ -119,13 +135,13 @@
                 <a class="button button-info" href="#">Подробнее</a>
               </div>
               <div class="catalog-item-book">
-                <p>от 3000р.</p>
+                <p>от 3000 р.</p>
                 <a class="button button-book" href="#">Забронировать</a>
               </div>
             </div>
             <div class="rank">
               <p class="stars">★ ★ ★</p>
-              <p class="rating">Рейтинг:8,9</p>
+              <p class="rating">Рейтинг: 8,9</p>
             </div>
           </li>
           <li class="catalog-item">
@@ -142,13 +158,13 @@
                 <a class="button button-info" href="#">Подробнее</a>
               </div>
               <div class="catalog-item-book">
-                <p>от 2000р.</p>
+                <p>от 2000 р.</p>
                 <a class="button button-book" href="#">Забронировать</a>
               </div>
             </div>
             <div class="rank">
               <p class="stars">★ ★</p>
-              <p class="rating">Рейтинг:9,2</p>
+              <p class="rating">Рейтинг: 9,2</p>
             </div>
           </li>
         </ul>
@@ -156,7 +172,7 @@
     </main>
     <footer class="main-footer">
       <div class="footer">
-        <p class="hashtag">&num;visitcedona</p>
+        <p class="hashtag">&num;visitsedona</p>
           <ul class="footer-social">
             <li>
               <a class="social-button" href="#"><span class="visually-hidden">Твиттер</span>
