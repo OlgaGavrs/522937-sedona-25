@@ -1,6 +1,7 @@
 var link = document.querySelector(".search");
 var popup = document.querySelector(".modal");
-link.addEventListener("click", function (evt){
+popup.classList.remove("no-js");
+link.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.toggle("modal-show");
 });
