@@ -488,7 +488,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   left: 316px;
   top: 289px;
-  z-index: 1;
+  z-index: 4;
   width: 568px;
   height: 395px;
   margin: 0;
@@ -1131,10 +1131,23 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
 }
 
+.main-footer iframe {
+  position: absolute;
+  z-index: 2;
+  border: none;
+}
+
+.map {
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+}
+
 .footer {
   display: flex;
   position: absolute;
-  bottom: 0px;
+  z-index: 3;
+  bottom: -474px;
   margin: 0;
   padding-top: 35px;
   padding-bottom: 35px;
